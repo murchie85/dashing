@@ -9,5 +9,7 @@ class Dashing.Alert extends Dashing.Widget
     # Example: $(@node).fadeOut().fadeIn() will make the node flash each time data comes in.
   onData: (data) ->
   @accessor 'isTooHigh', ->
-  	  @get('value') > 300
+  	  @get('value') > @get('threshold')
+
+  @accessor 'value', Dashing.AnimatedValue
 
