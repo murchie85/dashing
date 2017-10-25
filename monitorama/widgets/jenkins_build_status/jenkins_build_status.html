@@ -1,0 +1,16 @@
+<div class="build-failed">
+	<h1 class="jenkins-status"><span data-bind="title"></span> FAILED</h1>
+	<ul class="list-nostyle list-failed">
+	  <li data-foreach-item="failedJobs">
+	    <div class="label" data-bind="item.label"></div>
+	    <div class="value" data-bind="item.value"></div>
+	  </li>
+	</ul>
+</div>
+
+<div class="build-succeeded">
+	<h1 class="jenkins-status">All <span data-bind="title"></span> builds are successful</h1>
+	<i class="fa fa-thumbs-o-up"></i>
+</div>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
