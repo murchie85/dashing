@@ -1,4 +1,4 @@
-class Dashing.Number extends Dashing.Widget
+class Dashing.jira extends Dashing.Widget
   @accessor 'current', Dashing.AnimatedValue
 
   @accessor 'difference', ->
